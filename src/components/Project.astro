@@ -46,7 +46,7 @@ const {projects} = Astro.props as Props;
 
                             <div class="flex items-start justify-between mb-3 gap-2">
                                 <a class="text-xl md:text-2xl font-bold group-hover:text-[#0c56e9] transition-colors"
-                                   href={project.demoUrl || project.githubUrl || ''}
+                                   href={project.githubUrl}
                                    target="_blank"
                                    rel="noopener noreferrer"
                                     data-testid={`text-project-title-${index}`}>
