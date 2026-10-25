@@ -10,6 +10,7 @@ import {
     experienceItems
 } from "../data/timeline.ts";
 import {projectItems} from "../data/projects.ts"
+import {LinkItems} from "../data/contact.ts";
 ---
 
 <Layout>
@@ -19,5 +20,5 @@ import {projectItems} from "../data/projects.ts"
             experienceItems={experienceItems}/>
     <Project projects={projectItems}/>
     <Stack/>
-    <Contact/>
+    <Contact links={LinkItems}/>
 </Layout>

@@ -1,22 +1,27 @@
 ---
-import {Mail, Linkedin, Github} from '@lucide/astro';
+import type {Link} from "../data/contact.ts";
+interface Props {
+    links: Link[];
+}
+
+const {links} = Astro.props as Props;
 ---
-<section id="contact" class=" py-12 md:py-24 relative w-full mx-auto flex flex-col  items-center">
+<section id="contact" class=" py-12 md:py-32 relative w-full mx-auto flex flex-col  items-center">
     <div class="">
         <div class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 md:mb-12 text-center bg-gradient-to-r
         from-[#171717] to-[#1e2aff] bg-clip-text text-transparent">
             Contact
         </div>
         <div class="flex flex-wrap items-center justify-center gap-8">
-            <a href="https://www.linkedin.com/in/gabriel-perino/" class="hover:scale-110" target="_blank" rel="noopener noreferrer">
-                <Linkedin/>
-            </a>
-            <a href="https://www.github.com/GPerino/" class="hover:scale-110" target="_blank" rel="noopener noreferrer">
-                <Github/>
-            </a>
-            <a href="mailto:perino.contact@gmail.com" class="hover:scale-110" target="_blank" rel="noopener noreferrer">
-                <Mail/>
-            </a>
+            {links.map((link) => (
+                    <a href={link.url} class="hover:scale-110" target="_blank"
+                       rel="noopener noreferrer">
+                        <img
+                                src={link.image}
+                                alt={link.alt}
+                        />
+                    </a>
+            ))}
         </div>
     </div>
 </section>
