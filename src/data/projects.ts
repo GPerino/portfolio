@@ -31,7 +31,7 @@ export const projectItems: Project[] = [
         description: "Blog sur les nouveautés métal",
         technologies: ["laravel", "Mariadb"],
         image: "/images/metalheads.png",
-        // githubUrl: "https://github.com/GPerino/metalheads-laravel", -> not avalaible project
+        githubUrl: "https://gitlab.com/metalheads/metalheads-radio-2b",
     },
     {
         id: "4",
