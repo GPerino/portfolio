@@ -13,9 +13,9 @@ export const projectItems: Project[] = [
         id: "1",
         title: "Mini jeux console",
         description: "Programme pour lancer des mini jeux en version console.",
-        technologies: ["Python"],
+        technologies: ["Python",  "Console"],
         image: "/images/python_casino.png",
-        githubUrl: "https://github.com/coderangel117/python_game",
+        githubUrl: "https://github.com/GPerino/python_game",
     },
     {
         id: "2",
@@ -23,7 +23,7 @@ export const projectItems: Project[] = [
         description: "Intégration de défi todolist de FrontendMentor",
         technologies: ["html", "css", "js"],
         image: "/images/todolist-preview.jpg",
-        githubUrl: "https://github.com/coderangel117/todolist",
+        githubUrl: "https://github.com/GPerino/todolist",
     },
     {
         id: "3",
@@ -31,14 +31,14 @@ export const projectItems: Project[] = [
         description: "Blog sur les nouveautés métal",
         technologies: ["laravel", "Mariadb"],
         image: "/images/metalheads.png",
-        githubUrl: "https://github.com/coderangel117/metalheads-laravel",
+        githubUrl: "https://gitlab.com/metalheads/metalheads-radio-2b",
     },
     {
         id: "4",
         title: "hyrule castle",
         description: "Mini jeu tour par tour en version console sur le thème de Zelda.",
-        technologies: ["Python"],
+        technologies: ["Python", "Console"],
         image: "/images/zelda_game.png",
-        githubUrl: "https://github.com/coderangel117/python_game",
+        githubUrl: "https://github.com/GPerino/hyrule-castle",
     },
 ];

@@ -25,7 +25,7 @@ const {projects} = Astro.props as Props;
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
                     <div
-                            class="group border border-border rounded-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#0c56e9]/10 transition-all duration-300"
+                            class="group shadow-2xl rounded-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#0c56e9]/10 transition-all duration-300"
                             data-testid={`project-card-${index}`}
                     >
 
@@ -45,10 +45,13 @@ const {projects} = Astro.props as Props;
                         <div class="p-6">
 
                             <div class="flex items-start justify-between mb-3 gap-2">
-                                <h3 class="text-xl md:text-2xl font-bold group-hover:text-[#0c56e9] transition-colors"
+                                <a class="text-xl md:text-2xl font-bold group-hover:text-[#0c56e9] transition-colors"
+                                   href={project.githubUrl}
+                                   target="_blank"
+                                   rel="noopener noreferrer"
                                     data-testid={`text-project-title-${index}`}>
                                     {project.title}
-                                </h3>
+                                </a>
 
                                 <div class="flex gap-2 flex-shrink-0">
 
@@ -57,7 +60,7 @@ const {projects} = Astro.props as Props;
                                                     href={project.githubUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    class="w-9 h-9 flex items-center justify-center rounded-md border border-border hover:border-[#0c56e9] hover:bg-[#0c56e9]/10 transition-colors"
+                                                    class="w-9 h-9 flex items-center justify-center rounded-md hover:border-[#0c56e9] hover:bg-[#0c56e9]/10 transition-colors"
                                                     data-testid={`link-github-${index}`}
                                             >
                                                 <!-- Github SVG -->

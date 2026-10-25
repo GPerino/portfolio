@@ -13,9 +13,9 @@ import {ArrowDown, Download} from "@lucide/astro";
 
             <div class="flex items-center justify-between">
 
-                <div class="text-lg font-semibold">
+                <a class="text-lg font-semibold" href="#hero">
                     Portfolio
-                </div>
+                </a>
 
                 <label for="menu-toggle" class="md:hidden cursor-pointer text-2xl">
                     ☰
@@ -87,7 +87,7 @@ import {ArrowDown, Download} from "@lucide/astro";
 
             <div class="flex-shrink-0 relative">
                 <div class="absolute -inset-4 bg-gradient-to-r from-[#0c56e9]/30 to-[#9311d4]/30 rounded-lg blur-2xl opacity-50"/>
-                <div class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-lg overflow-hidden border-2 border-[#0c56e9]/30 shadow-2xl">
+                <div class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-lg overflow-hidden shadow-2xl">
                     <img
                             src="images/profile-picture.jpg"
                             alt="Profile"
@@ -97,28 +97,28 @@ import {ArrowDown, Download} from "@lucide/astro";
         </div>
 
         <div class="mt-16 md:mt-24 flex justify-center">
-            <div class="flex flex-col items-center gap-3 text-[#595e69] animate-bounce">
+            <a class="flex flex-col items-center gap-3 text-[#595e69] animate-bounce" href="#cursus">
                 <span class="text-sm font-medium">
                     Découvrir mon parcours
                 </span>
                 <ArrowDown class="w-5 h-5"/>
-            </div>
+            </a>
         </div>
     </div>
 </section>
 
 <script>
-    const nav = document.getElementById('nav');
-    document.addEventListener('scroll', function () {
-        if (window.scrollY > 15) {
-            nav?.classList.add('bg-white/95');
-            nav?.classList.add('backdrop-blur');
-            nav?.classList.add('w-full');
-        } else {
-            nav?.classList.remove('bg-white/95');
-            nav?.classList.remove('backdrop-blur');
-        }
-    })
+    // const nav = document.getElementById('nav');
+    // document.addEventListener('scroll', function () {
+    //     if (window.scrollY > 15) {
+    //         nav?.classList.add('bg-white/95');
+    //         nav?.classList.add('backdrop-blur');
+    //         nav?.classList.add('w-full');
+    //     } else {
+    //         nav?.classList.remove('bg-white/95');
+    //         nav?.classList.remove('backdrop-blur');
+    //     }
+    // })
 
 
     const menuToggle = document.getElementById("menu-toggle");
